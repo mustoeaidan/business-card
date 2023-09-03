@@ -1,0 +1,95 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.avatar {
+    width: 130px;
+    height: auto;
+    border-radius: 100px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+/* Add styling for the card container */
+.card {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: linear-gradient(to right, #8f7000, #2c7da0, #012a4a);
+  color: #fef9df;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect for scaling */
+  transform: perspective(1000px) rotateY(0deg); /* Initial perspective and rotation */
+}
+
+/* Style the card content */
+.card-content {
+  position: relative; /* Position the content relative to the card */
+}
+
+/* Style the text elements */
+.card-content h3,
+.card-content p,
+.card-content h4 {
+  transition: color 0.3s ease-in-out; /* Add a smooth color transition effect on hover */
+}
+
+/* Add hover effect to scale up and create depth */
+.card:hover {
+  transform: perspective(1000px) rotateY(5deg) scale(1.02); /* Apply perspective, rotation, and scaling on hover */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+/* Change text color on hover */
+.card:hover .card-content h3,
+.card:hover .card-content p,
+.card:hover .card-content h4 {
+  color: #ff7f00; /* Change text color on hover */
+}
+
+/* Add styles for social icons */
+.social-icons {
+  margin-top: 20px;
+}
+
+.icon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #fef9df;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.icon:hover {
+  color: #ff7f00; /* Change the color on hover */
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
